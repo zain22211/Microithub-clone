@@ -6,40 +6,50 @@ import Layout from './Layout';
 import Aboutus from './assets/Components/Navbar/Aboutus';
 import Contactus from './assets/Components/Navbar/Contactus';
 
+
 function App() {
+  
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: (
-        
-          <Home />
-        
-      ),
-    },
-    {
-      path: '/careers',
-      element: (
-        <Layout>
-          <Careers />
-        </Layout>
-      ),
-    },
-    {
-      path: '/aboutus',
-      element: (
-        <Layout>
-          <Aboutus />
-        </Layout>
-      ),
-    },
-    {
-      path: '/contactus',
-      element: (
-        <Layout>
-          <Contactus />
-        </Layout>
-      ),
-    },
+      path:'/',
+      element: <Layout />,
+      children:[
+        {
+          path: '/',
+          element: (
+            
+              <Home />
+            
+          ),
+        },
+        {
+          path: '/careers',
+          element: (
+          
+              <Careers />
+            
+          ),
+        },
+        {
+          path: '/aboutus',
+          element: (
+            
+              <Aboutus />
+            
+          ),
+        },
+        {
+          path: '/contactus',
+          element: (
+            
+              <Contactus />
+            
+          ),
+        },
+      ]
+    }
+
+ 
     
 
 
