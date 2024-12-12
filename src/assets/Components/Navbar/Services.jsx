@@ -2,15 +2,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 import React from "react";
 import Slider from "react-slick";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Services() {
       // Get window width dynamically to adjust settings for different screen sizes
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
+    AOS.init({duration:1000})
     // Update window width on resize
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -52,7 +55,7 @@ function Services() {
 
 
   return (
-    <div>
+    <div data-aos="zoom-in">
     <section className="h-20"></section>
     <div>
     <h6 className="font-medium uppercase flex text-center mb-4 justify-center text-blue-600">Our Services</h6>

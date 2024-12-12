@@ -5,7 +5,7 @@ function Workprocess() {
   const [tabIndex, setTabIndex] = useState(1);
   return (
 
-    <div className="mt-20">
+    <div data-aos="fade-left" className="mt-20">
       <h6 className="font-medium flex justify-center uppercase text-start  text-blue-600">process</h6>
       <h2 className="flex justify-center font-bold text-4xl text-left mb-4">Our Work Process</h2>
       <div className="flex mt-10 rounded-[40px] flex-wrap lg:flex-nowrap p-8  mx-auto max-w-[88%] text-center justify-center md:gap-1 bg-slate-100">

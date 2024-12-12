@@ -8,9 +8,17 @@ import Whychooseus from './assets/Components/Navbar/Whychooseus'
 import Footer from './assets/Components/Navbar/Footer'
 import CustomCursor from './CustomCursor'
 import Navbar from './assets/Components/Navbar/Navbar'
-
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({duration:1200})
+  })
+
+
   return (
     <div>
     return (
@@ -23,7 +31,7 @@ const Home = () => {
         <Contactinfo />
         <Workprocess />
         <Whychooseus />
-        <Footer />
+        
         </div>
        
     </div>

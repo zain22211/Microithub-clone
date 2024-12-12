@@ -1,8 +1,8 @@
 
-
 const Whoweare = () => {
+
   return (
-    <div className="flex flex-col md:flex-row items-center p-4">
+    <div data-aos="fade-right" className="flex flex-col md:flex-row items-center p-4">
       <div className="flex-shrink-0 w-full md:w-1/2">
         <img
           src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

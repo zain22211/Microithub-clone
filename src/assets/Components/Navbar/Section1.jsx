@@ -1,7 +1,8 @@
 
 import dummyimg from './dummyimg.jpg';
-
 function Section1() {
+
+
   return (
     <div>
     <section className='h-20'></section>

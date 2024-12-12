@@ -8,7 +8,7 @@ const Whychooseus = () => {
   const percentage2 = 80;
 
   return (
-    <div className="flex flex-col md:flex-row items-center p-4 mb-10 mt-10">
+    <div data-aos="zoom-out"  className="flex flex-col md:flex-row items-center p-4 mb-10 mt-10">
       <div className="mt-4 md:mt-20 md:ml-4 text-left md:text-left md:w-2/4">
         <h6 className="font-medium uppercase text-start mb-4 text-blue-600">Why choose us</h6>
         <h2 className="font-bold text-4xl text-left mb-4">
