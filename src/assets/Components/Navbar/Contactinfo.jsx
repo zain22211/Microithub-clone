@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Contactinfo() {
   return (
-    <div>
-    <div data-aos="flip-up" className="flex mt-14 rounded-[40px] flex-wrap lg:flex-nowrap p-8 md:p-10 mx-auto max-w-[88%]  text-center justify-center md:gap-1 bg-[#3e66f3]">
+    <div className=" py-20 bg-[url('/tech4.png')]">
+    <div className=" flex mt-14 rounded-[40px] flex-wrap lg:flex-nowrap p-8 md:p-10 mx-auto max-w-[88%]  text-center justify-center md:gap-1 bg-[#3e66f3]">
+  
     <div className=" flex md:w-2/4 text-center">
     <div className='flex w-4/4 justify-center items-center '>
     <div className='  '>
